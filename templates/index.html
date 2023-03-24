@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block tittle %}Home Page{% endblock %}
+{% block content %}
+<body id="pagina">
+    <div class="container">
+            <div id="conteudo", class="row justify-content-center">
+
+                <table class="table table-hover", id="myTable">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nome</th>
+                      <th scope="col">Login</th>
+                      <th scope="col">Senha</th>
+                      <th scope="col"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% for item in values %}
+                      <tr>
+                        <td>{{item.name}}</td>
+                        <td>{{item.login}}</td>
+                        <td>{{item.password}}</td>
+                        <td><a href="/delete/{{ item.id }}" class="btn btn-outline-danger">Deletar</a><input type="checkbox" onclick="myFunction()">Show Password
+                      </tr>
+                    {% endfor %}
+
+                    <script>
+                            $(document).ready( function () {
+                             $('#myTable').DataTable();
+                        } );
+                    </script>
+                  </tbody>
+                </table>
+                    <form action="#" method="post">
+                        <div id="cadastro-itens", class="input input-group mb-3">
+                          <input type="text" id="input_creden" name="nm" class="form-control" placeholder="Nome da credencial" aria-label="Nome da credencial" aria-describedby="button-addon2">
+                          <input type="text" id="input_creden1" name="lg" class="form-control" placeholder="Login" aria-label="Login" aria-describedby="button-addon2">
+                          <input type="text" id="input_creden2" name="pas" class="form-control" placeholder="Senha" aria-label="Senha" aria-describedby="button-addon2">
+                          <button class="btn btn-outline-success" type="submit" id="button-addon2">Cadastrar</button>
+                        </div>
+                    </form>
+            </div>
+
+    </div>
+
+
+
+
+</body>
+
+{% endblock %}

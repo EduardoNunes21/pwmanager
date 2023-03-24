@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Caudex&display=swap");
+
+:root {
+  --clr-background: rgb(247, 244, 244);
+  --clr-gray: rgb(119, 114, 114);
+  --font-main: "Caudex", serif;
+  --clr-dark-gray: #262626;
+  --clr-dark-black: #121212;
+  --clr-dark-text: rgb(226, 225, 225);
+}
+
+h1{
+  color: white;
+
+}
+
+#pagina {
+  background-color: var(--clr-dark-black);
+}
+
+#formulario-login{
+  display: grid;
+  place-items: center;
+  width: 6em;
+  position: relative;
+  top: -3em;
+}
+
+p {
+    display: inline-block;
+
+}
+
+#conteudo{
+    margin-top: 50px;
+
+}
+
+#cadastro-itens {
+    margin-top: 25px;
+}
+
+button[class="darkmode"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 50%;
+}
+
+button[class="darkmode"] {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-color: white;
+  border: 1px solid rgb(43, 43, 43);
+  border-radius: 50%;
+}
+
+#conteudo  {
+  background-color: var(--clr-dark-black);
+  color: var(--clr-dark-text);
+}
+
+#myTable {
+  background-color: var(--clr-dark-gray);
+}
+
+input {
+  background-color: var(--clr-gray);
+  color: white;
+  border-radius: 7px;
+  border: none;
+}
+
+input.placeholder {
+  color: white;
+}
+
+
+input:placeholder-shown {
+  background-color: grey;
+}
+
+#myTable_filter{
+  color: white;
+}
+
+#myTable_info{
+  color: white;
+}
+
+#myTable_paginate{
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#myTable_length{
+  color: white;
+  padding-bottom: 25px;
+}
+
+th {
+ color: white;
+}
+
+.table.dataTable tbody tr  {
+  background-color: var(--clr-dark-gray);
+  color: white;
+}
+
+.table.dataTable tbody tr {
+  color: white;
+}
+
+.table.dataTable tbody tr:hover {
+  background-color: var(--clr-gray);
+}
+
+select {
+  background-color: var(--clr-gray);
+  color: white;
+  border: none;
+}
+
+input:placeholder-shown{
+  color: white;
+
+}
+
+#cadastro-itens {
+  color: white;
+
+}
+
+input form-control::placeholder{
+  color: red;
+
+}
+
+#form-login{
+  padding-right: 750px;
+  padding-left: 750px;
+  padding-top: 100px;
+
+}
+
+#form-register{
+  padding-right: 750px;
+  padding-left: 750px;
+  padding-top: 100px;
+
+
+}
+
+#botao-login{
+  display: block;
+
+
+}
