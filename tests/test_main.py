@@ -1,4 +1,4 @@
-from main import User, db, app, sign_up
+from main import User, db, app, sign_up, login
 
 
 class TestClass:
@@ -16,7 +16,14 @@ class TestClass:
         WHEN quando um novo usuario for criado
         THEN verifica se os campos do usuario foram definidos corretamente
         """
-        user = User('teste@gmail.com', '123456')
+        password = '123456'
+        username = 'teste@gmail.com'
+
+        user = User(username=username, password=password)
 
         assert user.username == 'teste@gmail.com'
         assert user.password == '123456'
+
+
+
+
