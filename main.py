@@ -28,6 +28,10 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(20), nullable=False, unique=True)
     password = db.Column(db.String(80), nullable=False)
 
+    def __int__(self, username, password):
+        self.username = username
+        self.password = password
+
 
 class passwords(db.Model):
     id = db.Column("id", db.Integer, primary_key=True)
@@ -54,8 +58,6 @@ def delete(id):
 
 @app.route("/", methods=["POST", "GET"])
 @login_required
-
-
 def index():
     if request.method == "POST":
         name = request.form["nm"]
